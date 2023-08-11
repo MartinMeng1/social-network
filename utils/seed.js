@@ -85,5 +85,3 @@ connection.once('open', async () => {
 //     // Assign the friendIds array to the friends property of the user
 //     usersArray[i].friends = friendIds;
 //   }
-//   return usersArray;
-// };
