@@ -47,18 +47,14 @@ connection.once('open', async () => {
       friends: [], // Initialize an empty friends array for each user
     });
   }
-  // const Userschema = await User.collection.insertMany(users)
-  // Add friend relationships to users
-  //generateRandomFriendships(Userschema);
-//console.log(users)
-  // Insert users and their thoughts into the database
+
   await User.collection.insertMany(users);
 
   await Thought.collection.insertMany(thoughts1)
 
   await Thought.collection.insertMany(thoughts2)
  
-  //generateRandomFriendships(Userschema);
+
  
   
   console.info('Seeding complete! 🌱');
